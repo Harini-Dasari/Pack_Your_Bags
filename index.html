@@ -65,17 +65,18 @@
       color: #fff;
     }
 
-    .butterfly {
+    .fly-icon {
       position: absolute;
       width: 50px;
-      animation: fly 20s linear infinite;
+      animation: flyAcross 18s linear infinite;
       z-index: 1;
+      opacity: 0.9;
     }
 
-    @keyframes fly {
-      0% { transform: translate(-10vw, 0) rotate(0deg); }
-      50% { transform: translate(110vw, 50vh) rotate(180deg); }
-      100% { transform: translate(-10vw, 100vh) rotate(360deg); }
+    @keyframes flyAcross {
+      0% { transform: translateX(0) rotate(0deg); }
+      50% { transform: translateX(120vw) rotate(10deg); }
+      100% { transform: translateX(0) rotate(0deg); }
     }
 
     .scroll-top-btn {
@@ -100,8 +101,11 @@
 
 <body>
 
-  <!-- Butterflies -->
-<!-- Butterflies (9 animated flying icons) -->
+  <!-- Flying Travel-Themed Icons -->
+  <img src="https://cdn-icons-png.flaticon.com/512/1995/1995512.png" class="fly-icon" style="top: 10%; left: -80px; animation-delay: 0s;" alt="Plane" />
+  <img src="https://cdn-icons-png.flaticon.com/512/7431/7431406.png" class="fly-icon" style="top: 30%; left: -100px; animation-delay: 2s;" alt="Suitcase" />
+  <img src="https://cdn-icons-png.flaticon.com/512/1995/1995564.png" class="fly-icon" style="top: 50%; left: -120px; animation-delay: 4s;" alt="Car" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3043/3043888.png" class="fly-icon" style="top: 70%; left: -150px; animation-delay: 6s;" alt="Train" />
 
   <!-- Hero -->
   <div class="hero">
@@ -111,9 +115,8 @@
 
   <div class="container">
     <!-- Heritage Sites -->
-    <h2 class="section-title">🏛️ Popular Heritage Sites</h2>
+    <h2 class="section-title">🏛 Popular Heritage Sites</h2>
     <div class="row">
-      <!-- Each card with AOS animation -->
       <div class="col-md-4 mb-4" data-aos="fade-up">
         <a href="ElloraCaves/Ellora.html">
           <div class="card">
@@ -197,7 +200,7 @@
     </div>
 
     <!-- Hill Stations -->
-    <h2 class="section-title">🏞️ Hill Stations</h2>
+    <h2 class="section-title">🏞 Hill Stations</h2>
     <div class="row">
       <div class="col-md-4 mb-4" data-aos="fade-up">
         <a href="Hill Stations/coorg/coorg.html">
